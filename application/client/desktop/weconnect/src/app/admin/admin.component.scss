@@ -1,0 +1,37 @@
+.dashboardcard {
+    padding-top: 5%;
+    // background: #2903fd6b;
+}
+
+
+.card {
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-left: 7%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+  }
+  
+  .card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+  }
+
+  .adminimg {
+    width: 20%;
+    margin-left: 30%;
+    cursor: pointer;
+  }
+
+  .configbtn{
+    margin-bottom: 1%;
+    margin-top: 25%;
+    margin-left: -13%;
+  }

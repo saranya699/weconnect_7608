@@ -1,0 +1,209 @@
+<nav id="template-i090p" class="">
+    <div id="ij0o8m" class="gdp-row gpd-grid">
+        <div id="mySidenav" class="sidenav">
+<a [routerLink]="['javascript:void(0)']" onclick="closeNav()" id="template-if7ki"
+            class="closebtn">
+<div id="ibuiwl-2" class="cell gpd-clm">
+<img id="imvflv-2" src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/cdca723990474ba9ba33337d35ef399d_close.png" class=""/>
+</div>
+</a>
+
+            <div id="MainMenu" class="">
+                <div id="i0xya-2" class="cell gpd-clm">
+                    <div id="i60c7-2" class="gdp-row gpd-grid">
+                        <div id="ibuiwl" class="cell gpd-clm">
+                            <img id="imvflv" />
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-home" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' [routerLink]="['/home']">{{'source.home' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='isAdminUser'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='isAdminUser'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='isAdminUser'> <i id="iyxitk" class="fa fa-user" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf='isAdminUser'> <a id="i9imej" class="gpd-text" [routerLink]="['/admin']">{{'source.admin'| i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-sign-out" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' (click)="logout()">{{'source.logout' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <div id="icrvgp" class="cell gpd-clm" *ngIf='userId==null'>
+                                <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId==null'>
+                                    <div id="inlo1l" class="cell gpd-clm" *ngIf='userId==null'> <i id="iyxitk" class="fa fa-sign-in" aria-hidden="true"></i>
+
+                                    </div>
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId==null' [routerLink]="['/login']">{{'source.login' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf="isApplicable('authorization') && userId">
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf="isApplicable('authorization') && userId">
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf="isApplicable('authorization') && userId"> <i id="iyxitk" class="fa fa-shield" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf="isApplicable('authorization') && userId"> <a id="i9imej" class="gpd-text" [routerLink]="['/authorization']">{{'source.authorization' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf="isApplicable('manageroles') && userId">
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf="isApplicable('manageroles') && userId">
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf="isApplicable('manageroles') && userId"> <i id="iyxitk" class="fa fa-user-plus" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf="isApplicable('manageroles') && userId"> <a id="i9imej" class="gpd-text" [routerLink]="['/manageroles']">{{'source.manageroles' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf="isApplicable('manageusers') && userId">
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf="isApplicable('manageusers') && userId">
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf="isApplicable('manageusers') && userId"> <i id="iyxitk" class="fa fa-users" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf="isApplicable('manageusers') && userId"> <a id="i9imej" class="gpd-text" [routerLink]="['/manageusers']">{{'source.manageusers' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <div id="icrvgp" class="cell gpd-clm">
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="inlo1l" class="cell gpd-clm"> <i id="iyxitk" class="fa fa-language" aria-hidden="true"></i>
+
+                                    </div>
+                                    <div id="iytw4t" class="cell gpd-clm"> <a href="#translator" data-toggle="collapse" aria-expanded="false" id="i9imej"
+                                        class="dropdown-toggle text">
+                                                {{'source.selectLanguage' | i18next }} </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="collapse list-unstyled" id="translator">
+                                <li *ngFor="let lang of languages">
+                                    <div id="icrvgp" class="cell gpd-clm">
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="text" (click)='confirmLangModel(lang)'> {{'languages.' + lang | i18nextCap}}</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <div id="i0xya-2" class="cell gpd-clm">
+                    <div id="i60c7-2" class="gdp-row gpd-grid">
+                        <div id="ibuiwl" class="cell gpd-clm">
+                            <img id="imvflv" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwwLDAsMC4xNSk7IHRyYW5zZm9ybTogc2NhbGUoMC43NSkiPgogICAgICAgIDxwYXRoIGQ9Ik04LjUgMTMuNWwyLjUgMyAzLjUtNC41IDQuNSA2SDVtMTYgMVY1YTIgMiAwIDAgMC0yLTJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnoiPjwvcGF0aD4KICAgICAgPC9zdmc+"
+                            class="" />
+                        </div>
+<a [routerLink]="['./Dashboard/index.html']" id="icrvgp-2" class="cell gpd-clm">
+<div id="i6vd27" class="gdp-row gpd-grid">
+<div id="inlo1l" class="cell gpd-clm">
+<img src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/3be12dc8bad2464fb5a08bc8410fdce6_dashboard.png" id="iyxitk" class=""/>
+</div>
+<div id="iytw4t" class="cell gpd-clm">
+<div id="i9imej" class="gpd-text">
+Dashboard
+                    </div>
+</div>
+</div>
+</a>
+
+                        <div id="icrvgp-5" class="cell gpd-clm">
+                            <div id="i6ome-2" class="gdp-row gpd-grid">
+                                <div id="i6oo8-2" class="cell gpd-clm">
+                                    <img src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/571ffe7788754a1fb50f19f0581c5d05_user.png"
+                                    id="ifv5u-2" class="" />
+                                </div>
+                                <div id="il0mj-2" class="cell gpd-clm">
+                                    <div id="ihhwx-2" class="gpd-text">Clients</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp-3" class="cell gpd-clm">
+                            <div id="iu9ov-2-2" class="gdp-row gpd-grid">
+                                <div id="ipnnd-2-2" class="cell gpd-clm">
+                                    <img src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/e93175edd6014625b08e6c72dac4170e_iconfinder_people-group-team-peoples-friend_3643747_1.png"
+                                    id="ia3i1-2-2" class="" />
+                                </div>
+                                <div id="is7ms-2-2" class="cell gpd-clm">
+                                    <div id="ir6sf-2-2" class="gpd-text">Designs</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm">
+                            <div id="i7opg-2" class="gdp-row gpd-grid">
+                                <div id="ica1k-2" class="cell gpd-clm">
+                                    <img src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/7b4b9e3a53794957997ec4c8fcd61a39_project.png"
+                                    id="ifr77-2" class="" />
+                                </div>
+                                <div id="i5pxe-2" class="cell gpd-clm">
+                                    <div id="isfwg-2" class="gpd-text">Projects</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp-4" class="cell gpd-clm">
+                            <div id="ieqyl-2" class="gdp-row gpd-grid">
+                                <div id="iljd7-2" class="cell gpd-clm">
+                                    <img src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/3932ed755bc24d889bc14f18b2f72515_list.png"
+                                    id="iw2uj-2" class="" />
+                                </div>
+                                <div id="if973-2" class="cell gpd-clm">
+                                    <div id="i8u7u-2" class="gpd-text">Architects</div>
+                                </div>
+                            </div>
+                        </div>
+<a [routerLink]="['./About/index.html']" id="icrvgp-6" class="cell gpd-clm">
+<div id="iu9ov-2" class="gdp-row gpd-grid">
+<div id="ipnnd-2" class="cell gpd-clm">
+<img src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/e93175edd6014625b08e6c72dac4170e_iconfinder_people-group-team-peoples-friend_3643747_1.png" id="ia3i1-2" class=""/>
+</div>
+<div id="is7ms-2" class="cell gpd-clm">
+<div id="ir6sf-2" class="gpd-text">
+About Us</div>
+</div>
+</div>
+</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'top': '100px','display': confirmLangChangeModal}">
+    <div class="modal-dialog modal-sm" role="dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>language change cause you to re-login</p>
+            </div>
+            <div class="modal-footer" style="padding: 5px">
+                <button type="button" (click)="confirmLangChange()" class="btn btn-default">Confirm</button>
+                <button type="button" (click)="onCloseHandled()" class="btn btn-default">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
